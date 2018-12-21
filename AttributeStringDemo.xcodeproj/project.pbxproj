@@ -15,6 +15,10 @@
 		0784F1BE21CCD52F000F66FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784F1BD21CCD52F000F66FF /* main.m */; };
 		0784F1C821CCD52F000F66FF /* AttributeStringDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784F1C721CCD52F000F66FF /* AttributeStringDemoTests.m */; };
 		0784F1D321CCD52F000F66FF /* AttributeStringDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784F1D221CCD52F000F66FF /* AttributeStringDemoUITests.m */; };
+		0784F1E221CCD5F5000F66FF /* CLAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784F1E121CCD5F5000F66FF /* CLAttributedString.m */; };
+		0784F1E521CCD774000F66FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0784F1E421CCD774000F66FF /* UIKit.framework */; };
+		0784F1E721CCD77D000F66FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0784F1E621CCD77D000F66FF /* Foundation.framework */; };
+		0784F1E921CCD817000F66FF /* wfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0784F1E821CCD817000F66FF /* wfirst.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		0784F1CE21CCD52F000F66FF /* AttributeStringDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributeStringDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0784F1D221CCD52F000F66FF /* AttributeStringDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeStringDemoUITests.m; sourceTree = "<group>"; };
 		0784F1D421CCD52F000F66FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0784F1E021CCD5F5000F66FF /* CLAttributedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLAttributedString.h; sourceTree = "<group>"; };
+		0784F1E121CCD5F5000F66FF /* CLAttributedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLAttributedString.m; sourceTree = "<group>"; };
+		0784F1E421CCD774000F66FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0784F1E621CCD77D000F66FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0784F1E821CCD817000F66FF /* wfirst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wfirst.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0784F1E721CCD77D000F66FF /* Foundation.framework in Frameworks */,
+				0784F1E521CCD774000F66FF /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,7 @@
 				0784F1C621CCD52F000F66FF /* AttributeStringDemoTests */,
 				0784F1D121CCD52F000F66FF /* AttributeStringDemoUITests */,
 				0784F1AC21CCD52E000F66FF /* Products */,
+				0784F1E321CCD774000F66FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +117,9 @@
 				0784F1AF21CCD52E000F66FF /* AppDelegate.m */,
 				0784F1B121CCD52E000F66FF /* ViewController.h */,
 				0784F1B221CCD52E000F66FF /* ViewController.m */,
+				0784F1E021CCD5F5000F66FF /* CLAttributedString.h */,
+				0784F1E121CCD5F5000F66FF /* CLAttributedString.m */,
+				0784F1E821CCD817000F66FF /* wfirst.png */,
 				0784F1B421CCD52E000F66FF /* Main.storyboard */,
 				0784F1B721CCD52F000F66FF /* Assets.xcassets */,
 				0784F1B921CCD52F000F66FF /* LaunchScreen.storyboard */,
@@ -130,6 +145,15 @@
 				0784F1D421CCD52F000F66FF /* Info.plist */,
 			);
 			path = AttributeStringDemoUITests;
+			sourceTree = "<group>";
+		};
+		0784F1E321CCD774000F66FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0784F1E621CCD77D000F66FF /* Foundation.framework */,
+				0784F1E421CCD774000F66FF /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0784F1E921CCD817000F66FF /* wfirst.png in Resources */,
 				0784F1BB21CCD52F000F66FF /* LaunchScreen.storyboard in Resources */,
 				0784F1B821CCD52F000F66FF /* Assets.xcassets in Resources */,
 				0784F1B621CCD52E000F66FF /* Main.storyboard in Resources */,
@@ -263,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0784F1B321CCD52E000F66FF /* ViewController.m in Sources */,
+				0784F1E221CCD5F5000F66FF /* CLAttributedString.m in Sources */,
 				0784F1BE21CCD52F000F66FF /* main.m in Sources */,
 				0784F1B021CCD52E000F66FF /* AppDelegate.m in Sources */,
 			);
@@ -435,7 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = AttributeStringDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edefefqefqe.AttributeStringDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,7 +480,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				INFOPLIST_FILE = AttributeStringDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +490,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = edefefqefqe.AttributeStringDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
